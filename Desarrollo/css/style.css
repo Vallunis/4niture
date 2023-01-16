@@ -1,0 +1,298 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*CLASS*/
+
+.centrado {
+	display: flex;
+	justify-content: center;
+}
+
+.fila {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.columna {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Ajustes*/
+
+a, li {
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+a:hover {
+	color: lightgrey;
+}
+
+/*Cabecera*/
+
+header > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 15vh;
+}
+
+#menu > ul > li {
+	padding: 1em;
+}
+
+/*Galería*/
+
+#categorias {
+	height: 190vh;
+}
+
+#galeria {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+#galeria > a {
+	flex: 30%;
+	height: 60vh;
+}
+
+#galeria > a > figure {
+	position: relative;
+	padding: 1px;
+	background-color: white;
+}
+
+#galeria > a > figure > figcaption {
+	color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#galeria > a > figure:hover > figcaption {
+    color: white;
+    opacity: 1;
+}
+
+/*Footer*/
+
+footer {
+	height: 10vh;
+}
+
+#redes > a > figure > img {
+	width: 2em;
+	margin: 0 1em;
+}
+
+/*Nosotros*/
+
+#nosotros {
+	height: 70vh;
+	display: flex;
+	justify-content: space-around;
+}
+
+#texto {
+	margin: 0 15em;
+}
+
+#mapa {
+	margin-right: 10em;
+}
+
+/*Formulario*/
+
+#cuentanos {
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#titulo {
+	display: flex;
+	justify-content: center;
+}
+
+#formulario {
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	width: 30%;
+}
+
+form > fieldset > div > input {
+    display: block;
+    width: 100%;
+    height: 2em;
+    margin: 1em 0;
+    border-radius: 5px;
+	border: solid 1px black;
+	padding: 0 0.4em;
+}
+
+form > fieldset > div > label {
+	display: none;
+}
+
+.full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+	
+	#galeria > a {
+		height: 40vh;
+	}
+	
+	#categorias {
+		height: 130vh;
+	}
+	
+	#menu > ul {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#menu > ul > li {
+		padding: 0;
+	}
+	
+	#texto {
+		margin: 6em 2em;
+	}
+
+	#mapa {
+		margin-right: 0em;
+	}
+	
+	#nosotros > div {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+@media only screen and (max-width: 425px) {
+	
+	header > div {
+		display: flex;
+		flex-direction: column;
+		height: 30vh;
+	}
+	
+	#menu > ul {
+		display: flex;
+		flex-direction: row
+	}
+	
+	#menu > ul > li {
+		padding: 0.5em;
+	}
+	
+	#galeria > a {
+		height: 10vh;
+	}
+	
+	#categorias {
+		height: 410vh;
+	}
+	
+	#galeria {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#galeria > a > figure > figcaption {
+		opacity: 1;
+	}
+	
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#mapa > iframe {
+		width: 90%;
+		height: auto;
+		margin-bottom: 6em;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+	
+	#categorias {
+		height: 350vh;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
